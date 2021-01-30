@@ -1,0 +1,52 @@
+.aside {
+    &-nav {
+      min-height: 400px;
+
+      &:last-child {
+        margin-top: 50px;
+      }
+    }
+    //! Название раздела
+    &__title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        color: $dark;
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+    //! Aside menu
+    &__menu {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      margin-bottom: 40px;
+    }
+
+    &__item {
+      margin-bottom: 8px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__link {
+      font-family: "Open Sans";
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+      color: $accent;
+    }
+
+    &__button {
+      padding-left: 16px;
+      padding-right: 16px;
+
+      .dark-arrow-right img {
+        vertical-align: middle;
+        transform: translateY(-1px);
+      }
+    }
+}

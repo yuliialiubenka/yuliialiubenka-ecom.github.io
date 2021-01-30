@@ -1,0 +1,32 @@
+//! Normalize CSS
+@import url("normalize.min.css");
+
+//! Переменные
+@import "parts/vars";
+
+//! Mixins
+@import "parts/mixins";
+
+//! Кнопки
+@import "parts/buttons";
+
+//! Основные стили
+@import "parts/basic";
+
+//! Шапка
+@import "parts/header";
+
+//! Aside
+@import "parts/aside";
+
+//! Main
+@import "parts/main";
+
+//! Banner
+@import "parts/banner";
+
+//! Card
+@import "parts/card";
+
+//! Blog card
+@import "parts/blog-card";

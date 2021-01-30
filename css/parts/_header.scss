@@ -1,0 +1,198 @@
+.header {
+    &__top {
+        @include dfcb;
+
+        padding-top: 12px;
+        padding-bottom: 12px;
+        
+        //! Левая часть
+
+        &-list {
+            @include dfcb;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        &-item {
+            margin-right: 33px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        &-link {
+            font-family: "Open Sans", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+            font-size: 12px;
+            text-decoration: none;
+            color: $accent;
+            display: inline-block;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+           
+        }
+    }
+    //! Почта и телефон в шапке
+    &__mail,
+    &__phone {
+        color: $dark;
+    }
+    //! Header middle
+    &__middle {
+        @include dfcb;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    &__actions {
+        display: flex;
+        justify-content: space-between;
+        width: 88px;
+        height: 31px;
+    }
+    &__button {
+        background-color: transparent;
+        border: none;
+        position: relative;
+        padding: 0;
+    }
+    &__action-source {
+        height: 24px;
+        width: 24px;
+    }
+    //! Счётчик товаров
+    .cart-counter {
+        background-color: $secondary-accent;
+        color: white;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        font-size: 12px;
+        
+        position: absolute;
+        left: -5px;
+        bottom: -5px;
+    }
+
+    //! Поиск
+    &__search {
+        @include dfcb;
+        width: 500px;
+        height: 42px;
+        padding-left: 16px;
+        padding-right: 16px;
+        border-radius: 12px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: lighten($dark, 75%)
+
+    }
+
+    .product {
+        &-list {
+            
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        
+        &-item {
+            @include dfcb;
+            width: 130px;
+            height: 23px;
+            font-size: 15px;
+            font-weight: 700;
+            color: $dark;
+            line-height: 23px;
+
+            & .list-arrow-down {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+    .search-wrap {
+        @include dfcb;
+        width: 330px;
+        position: relative;
+    }
+    .line {
+        height: 20px;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    .input__search {
+        width: 80%;
+        height: 30px;
+        border: none;
+
+        &::placeholder {
+            color: lighten($dark, 65%);
+            font-family: "Open Sans", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 19px;
+
+        }
+    }
+
+    .search-icon {
+        width: 16px;
+        height: 16px;
+
+        &__source {
+            width: 16px;
+            height: 16px;
+        }
+        
+    }
+    //! Header Bottom
+
+    &__bottom {
+        background-color: #F9F9F9;
+        padding-top: 16px;
+        padding-bottom: 16px; 
+    }
+
+    &__wrapper {
+        display: flex;
+    }
+    .category {
+
+        &-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            margin-right: 40px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        &-link {
+            display: flex;
+            color: $dark;
+            text-decoration: none;
+            font-weight: 500;
+
+        }
+
+        &-link .list-arrow-down img {
+            width: 12px;
+            height: 12px;
+            display: inline-block;
+        }
+        &-item .category-sublist {
+            display: none;
+        }
+
+    }
+
+}
